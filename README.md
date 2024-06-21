@@ -8,15 +8,15 @@ Clone this repository using the following command:
 
 
 ### 2. Initialize the Project and Install Dependencies
-Initialize a new npm project and install the necessary dependencies:
+Initialize the project and install the necessary dependencies:
 
     npm install
 
 ### 3. Add Your JS File
-To minify your JavaScript code file, replace scripts/script.js with YOUR_JS_FILE.JS. Add your JavaScript code content into YOUR_JS_FILE.JS.
+To minify your JavaScript code file, replace `scripts/script.js` with `YOUR_JS_FILE.JS.` Add your JavaScript code content into `YOUR_JS_FILE.JS.`
 
 ### 4. Configuration
-Create a configuration file named webpack.config.js in your current git repository and add the following content:
+Create a configuration file named `webpack.config.js` in your current git repository and add the following content:
 
     // webpack.config.js
     const path = require('path');
@@ -51,8 +51,8 @@ To minify your library or code, use the following command:
 
 This will generate a minified and obfuscated version of your library in the `dist` directory.
 
-### 6. Test Your Mibified Library/Code
-Create an index.html file to include your minified library and use the exported class.
+### 6. Test Your Minified Library/Code
+Create an `index.html` file to include your minified library and use the exported class.
 
     <!DOCTYPE html>
     <html lang="en">
