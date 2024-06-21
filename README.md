@@ -23,11 +23,11 @@ Create a configuration file named `webpack.config.js` in your current git reposi
     const TerserPlugin = require('terser-webpack-plugin');
 
     module.exports = {
-        entry: './src/index.js', // replace your script file absolute location here
+        entry: './src/script.js', // replace your script file absolute location here
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'my-library.min.js', // replace your export library file name here
-            library: 'MyLibrary', // replace export library name here
+            library: 'AKLib', // replace export library name here
             libraryTarget: 'umd',
             globalObject: 'this',
         },
@@ -65,12 +65,12 @@ Create an `index.html` file to include your minified library and use the exporte
     <script src="dist/my-library.min.js"></script>
     <script>
         // Access the exported class from the MyLibrary global object
-        const conetnt = new MyLibrary.dispalyMessage();
+        const conetnt = new AKLib.displayMessage();
         console.log(content);
     </script>
     </body>
     </html>
 
-Open the `index.html` file in a web browser. You should see the console log as your `displayMessage` content.
+Open the `index.html` file in a web browser. You should see the console log as your `Hello guys!!!` content.
 
  **THANK YOU!!!.**

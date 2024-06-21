@@ -2,11 +2,11 @@ const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', // Path to your main JavaScript file
+  entry: './scripts/script.js', // Path to your main JavaScript file
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'my-video-player-library.min.js', // exportable file name
-    library: 'VideoPlayerLibrary', // exportable library name
+    filename: 'my-library.min.js', // exportable file name
+    library: 'AKLib', // exportable library name
     libraryTarget: 'umd',
     globalObject: 'this',
   },
